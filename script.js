@@ -96,6 +96,8 @@
     // Open the modal when the button is clicked
     openModal.addEventListener("click", function () {
       modal.style.display = "block";
+      document.body.style.position = "fixed";
+      document.body.style.width = "100%";
       // modalClass.classList.remove("hidden");
       // overlay.classList.remove("hidden");
     });
@@ -103,6 +105,7 @@
     // Close the modal when the close button is clicked
     closeModal.addEventListener("click", function () {
       modal.style.display = "none";
+      document.body.style.position = "";
     });
 
     // Close the modal when clicking outside of the modal content
